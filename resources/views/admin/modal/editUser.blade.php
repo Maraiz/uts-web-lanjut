@@ -54,12 +54,6 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="tglLahir" class="col-sm-5 col-form-label">Tanggal lahir</label>
-                        <div class="col-sm-7">
-                            <input type="date" class="form-control" id="tglLahir" name="tglLahir" value="{{$data->tglLahir}}">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
                         <label for="role" class="col-sm-5 col-form-label">Jabatan</label>
                         <div class="col-sm-7">
                             <select type="text" class="form-control" id="role" name="role">

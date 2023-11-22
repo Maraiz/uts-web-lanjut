@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('foto')->default('default.png');
             $table->string('alamat');
             $table->string('tlp');
-            $table->date('tglLahir');
             $table->boolean('is_active')->default(1);
             $table->integer('role');
             $table->rememberToken();

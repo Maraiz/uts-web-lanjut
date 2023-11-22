@@ -41,27 +41,11 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="alamat" class="col-sm-3 col-form-label">Address 2 </label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" name="alamat2" id="alamat"
-                                placeholder="Input Address 2">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
                         <label for="tlp" class="col-sm-3 col-form-label">Phone Number <span
                                 style="color:red;">*</span>
                         </label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="tlp" name="tlp"
-                                placeholder="Input phone number">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="date" class="col-sm-3 col-form-label">Date of birth <span
-                                style="color:red;">*</span>
-                        </label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="date" name="date"
                                 placeholder="Input phone number">
                         </div>
                     </div>

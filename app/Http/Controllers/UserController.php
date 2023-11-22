@@ -38,7 +38,6 @@ class UserController extends Controller
         $data->alamat       = $request->alamat;
         $data->tlp          = $request->tlp;
         $data->role         = $request->role;
-        $data->tglLahir         = $request->tglLahir;
         $data->is_active    = 1;
         $data->is_mamber    = 0;
         $data->is_admin     = 1;
@@ -87,7 +86,6 @@ class UserController extends Controller
             'password'              => bcrypt($request->password),
             'alamat'                => $request->alamat,
             'tlp'                   => $request->tlp,
-            'tglLahir'              => $request->tglLahir,
             'role'                  => $request->role,
             'foto'                  => $filename,
         ];
@@ -118,7 +116,6 @@ class UserController extends Controller
         $data->alamat       = $request->alamat . " " . $request->alamat2;
         $data->tlp          = $request->tlp;
         $data->role         = 0;
-        $data->tglLahir     = $request->date;
         $data->is_active    = 1;
         $data->is_mamber    = 1;
         $data->is_admin     = 0;
