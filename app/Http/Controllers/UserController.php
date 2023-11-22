@@ -145,10 +145,15 @@ class UserController extends Controller
         $user = new User;
         $proses = $user::where('email', $request->email)->first();
         
-        if ($proses->is_active === 0) {
-            Alert::toast('Kamu belum register', 'error');
+        $proses = $user::where('email', $request->email)->first();
+
+        if (!$proses) {
+            Alert::toast('Email dan Password salah', 'error');
             return back();
         }
+        
+
+        
         if (Auth::attempt($dataLogin)) {
             Alert::toast('Kamu berhasil login', 'success');
             $request->session()->regenerate();

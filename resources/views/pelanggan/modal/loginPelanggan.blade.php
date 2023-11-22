@@ -12,15 +12,15 @@
                     <div class="mb-3 row">
                         <label for="email" class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="email" name="email" value=""
-                                placeholder="Masukan email Anda">
+                            <input type="email" class="form-control" id="email" name="email" value=""
+                                placeholder="Masukan email Anda" required>
                         </div>
                     </div>
                     <div class="mb-5 row">
                         <label for="password" class="col-sm-3 col-form-label">Password</label>
                         <div class="col-sm-9">
                             <input type="password" class="form-control" id="password" name="password"
-                                placeholder="Masukan password anda">
+                                placeholder="Masukan password anda" required>
                         </div>
                     </div>
 
