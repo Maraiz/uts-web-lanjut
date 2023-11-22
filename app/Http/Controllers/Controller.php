@@ -214,30 +214,33 @@ class Controller extends BaseController
     }
     public function loginProses(Request $request)
     {
-        Session::flash('error', $request->email);
         $dataLogin = [
             'email' => $request->email,
             'password'  => $request->password,
         ];
-
-        $user = new User;
-        $proses = $user::where('email',$request->email)->first();
-
-        if($proses->is_admin === 0){
-            Session::flash('error','Kamu bukan admin');
+    
+        $user = User::where('email', $request->email)->first();
+    
+        if (!$user) {
+            Alert::toast('Email dan Password salah', 'error');
             return back();
-        }else{
-            if(Auth::attempt($dataLogin)){
-                Alert::toast('Kamu berhasil login', 'success');
-                $request->session()->regenerate();
-                return redirect()->intended('/admin/dashboard');
-            }else{
-                Alert::toast('Email dan Password salah', 'error');
-                return back();
-            }
+        }
+    
+        if ($user->is_admin === 0) {
+            Alert::toast('Kamu bukan admin', 'error');
+            return back();
+        }
+    
+        if (Auth::attempt($dataLogin)) {
+            Alert::toast('Kamu berhasil login', 'success');
+            $request->session()->regenerate();
+            return redirect()->intended('/admin/dashboard');
+        } else {
+            Alert::toast('Email dan Password salah', 'error');
+            return back();
         }
     }
-
+    
     public function logout()
     {
         Auth::logout();
