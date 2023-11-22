@@ -11,9 +11,6 @@
                     <a class="nav-link {{ Request::path() == '/' ? 'active' : '' }}" aria-current="page"
                         href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::path() == 'shop' ? 'active' : '' }}" href="/shop">Shop</a>
-                </li>
                 @auth
                     <div class="select" tabindex="0" role="button">
                         <div class="text-links">

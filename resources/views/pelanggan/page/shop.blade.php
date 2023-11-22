@@ -1,4 +1,4 @@
-@extends('pelanggan.layout.index')
+{{-- @extends('pelanggan.layout.index')
 
 @section('content')
     <div class="row mt-4">
@@ -43,4 +43,4 @@
             @endif
         </div>
     </div>
-@endsection
+@endsection --}}

@@ -23,7 +23,6 @@ Route::POST('/storePelanggan', [UserController::class, 'storePelanggan'])->name(
 Route::POST('/login_pelanggan', [UserController::class, 'loginProses'])->name('loginproses.pelanggan');
 Route::GET('/logout_pelanggan', [UserController::class, 'logout'])->name('logout.pelanggan');
 
-Route::get('/shop', [Controller::class, 'shop'])->name('shop');
 Route::get('/transaksi', [Controller::class, 'transaksi'])->name('transaksi');
 Route::get('/contact', [Controller::class, 'contact'])->name('contact');
 

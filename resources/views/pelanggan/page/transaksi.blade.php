@@ -7,6 +7,13 @@
             -webkit-appearance: none;
             margin: 0;
         }
+
+        .product-image {
+            max-width: 250px; /* Set your desired maximum width for the images */
+            max-height: 250px; /* Set your desired maximum height for the images */
+            width: auto;
+            height: auto;
+        }
     </style>
     <h3 class="mt-5 mb-5">Keranjang Belanja</h3>
     @if (!$data)
@@ -14,7 +21,7 @@
         @foreach ($data as $x)
             <div class="card mb-3">
                 <div class="card-body d-flex gap-4">
-                    <img src="{{ asset('storage/product/' . $x->product->foto) }}" alt="">
+                    <img src="{{ asset('storage/product/' . $x->product->foto) }}" alt="" class="product-image">
                     <form action="{{ route('checkout.product', ['id' => $x->id]) }}" method="POST">
                         @csrf
                         <div class="desc w-100">
