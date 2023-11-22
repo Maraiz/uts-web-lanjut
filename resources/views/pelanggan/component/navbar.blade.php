@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #025464">
+<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #000000">
     <div class="container">
         <a class="navbar-brand" href="#">Toko Bunga</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

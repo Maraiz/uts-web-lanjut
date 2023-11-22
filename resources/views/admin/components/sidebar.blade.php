@@ -1,6 +1,6 @@
 <aside
     class="sidebar navbar navbar-expand-lg bg-dark d-flex flex-column gap-4 align-content-lg-center mx-2 my-2 rounded">
-    <h5 class="navbar-brand">Toko Online Kita</h5>
+    <h5 class="navbar-brand">Admin Toko Bunga</h5>
     {{-- <hr class="" style="color: white;font-weight:800"> --}}
     <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
         <ul class="navbar-nav flex-column gap-3 px-2">
